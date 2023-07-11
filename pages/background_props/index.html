@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/fonts.css" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+
+    <title>HTML/CSS Modulul 4 - Lectia 7</title>
+    <style>
+      .section-with-bg {
+        height: 300px;
+        margin: 16px;
+        padding: 16px;
+        border: 1px solid transparent;
+        background: url("./images/mouse.jpg") top center / 250px 250px no-repeat
+          fixed padding-box content-box royalblue;
+
+        
+        /* background-image: url(./images/mouse.jpg);
+        background-position-x: center;
+        background-position-y: top;
+        background-size: 250px 250px;
+        background-repeat-x: no-repeat;
+        background-repeat-y: no-repeat;
+        background-attachment: fixed;
+        background-origin: padding-box;
+        background-clip: content-box;
+        background-color: royalblue; */
+       
+      }
+
+      
+      Centrarea unei imagini intr-un container
+
+      /* .section-with-center-bg {
+        background-image: url("images/mouse.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+      } */
+     
+    </style>
+  </head>
+  <body>
+    <main class="container example-page">
+      <h1 class="heading-primary">Proprietatile background</h1>
+      <section class="section-with-bg"></section>
+
+      <article>
+        <ul class="answers-list">
+          <li>background-color</li>
+          <li>background-image</li>
+          <li>background-position</li>
+          <li>background-size</li>
+          <li>background-repeat</li>
+          <li>background-origin</li>
+          <li>background-attachment</li>
+        </ul>
+      </article>
+    </main>
+  </body>
+</html>

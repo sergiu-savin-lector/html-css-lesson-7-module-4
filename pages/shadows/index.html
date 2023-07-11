@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/fonts.css" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+
+    <title>HTML/CSS Modulul 4 - Lectia 7</title>
+    <style>
+      body {
+        background: lightblue;
+      }
+
+      .small-container {
+        background: white;
+        width: 128px;
+        height: 64px;
+      }
+
+      .card {
+        background: white;
+        height: 300px;
+      }
+
+      .shadow {
+        box-shadow: 17px -15px 16px -16px rgba(0, 0, 0, 0.75);
+      }
+
+      .inner-shadow {
+        box-shadow: inset 0 0 10px #f8a100;
+      }
+
+      .button {
+        background: #4242b3;
+        outline: none;
+        border: 1px solid #434384;
+        color: white;
+        padding: 16px;
+        text-transform: uppercase;
+      }
+
+      .button:hover {
+        cursor: pointer;
+        box-shadow: 0 4px 4px rgba(16, 27, 233, 0.1),
+          0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(65, 99, 173, 0.1),
+          0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15),
+          8px 64px 64px rgba(0, 0, 0, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container example-page">
+      <h1 class="heading-primary">Umbre CSS</h1>
+      <section>
+        <article>
+          <p>Umbre - efecte "ieftine" de a crea un site mai aspectuos</p>
+          <ul class="bullet-list mt-md">
+            <li>
+              <a href="https://www.cssmatic.com/box-shadow">
+                https://www.cssmatic.com/box-shadow
+              </a>
+            </li>
+            <li>
+              <a href="https://box-shadow.dev/">https://box-shadow.dev/</a>
+            </li>
+            <li>
+              <a href="https://html-css-js.com/css/generator/box-shadow/"
+                >https://html-css-js.com/css/generator/box-shadow/</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Box-shadow_generator"
+              >
+                https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Box-shadow_generator
+              </a>
+            </li>
+          </ul>
+        </article>
+        <div class="card shadow mt-md"></div>
+        <div class="card inner-shadow mt-xs"></div>
+        <button class="button mt-xs">Hover me</button>
+      </section>
+    </main>
+  </body>
+</html>

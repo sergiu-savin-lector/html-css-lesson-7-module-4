@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/fonts.css" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+
+    <title>HTML/CSS Modulul 4 - Lectia 7</title>
+    <style>
+      .section-with-bg {
+        background-image: url("./images/mouse.jpg");
+        background-repeat: no-repeat;
+        height: 200px;
+      }
+
+      .svg-container {
+        background: lightblue;
+        color: #0d1e41;
+        margin-top: 32px;
+        padding: 16px;
+        max-width: 300px;
+        display: flex;
+        align-items: center;
+      }
+
+      .svg-container span {
+        margin-left: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container example-page">
+      <h1 class="heading-primary">Tipuri de imagini</h1>
+      <section>
+        <article>
+          <h2>Imagini de continut</h2>
+          <p>
+            Poartă o încărcătură semantică, se referă la conținutul paginii și
+            contribuie la comunicarea unor informații utile pentru utilizator.
+            Ele sunt adăugate în marcajul HTML prin tag-ul <img /> cu atributul
+            obligatoriu alt care descrie imaginea.
+          </p>
+          <div class="examples-section">
+            <img src="./images/mouse.jpg" alt="Mouse pentru laptop" />
+          </div>
+        </article>
+        <article>
+          <h2>Imaginile decorative</h2>
+          <p>
+            sunt folosite exclusiv pentru decorul suplimentar. Nu poartă nicio
+            informație utilă și servesc doar pentru "frumusețe". Acestea sunt
+            adăugate prin CSS ca fundal folosind proprietatea background-image,
+            sau marcate în HTML cu tag-ul &lt;svg&gt; (în cazul graficii
+            vectoriale).
+          </p>
+          <div class="examples-section">
+            <h3>CSS Background</h3>
+            <div class="section-with-bg"></div>
+          </div>
+
+          <div class="examples-section">
+            <h3>SVG Tag</h3>
+            <div class="svg-container">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0v6zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5z"
+                />
+              </svg>
+              <span>Mouse</span>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/fonts.css" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+
+    <title>HTML/CSS Modulul 4 - Lectia 7</title>
+    <style>
+      .my-image {
+        width: 150px;
+        height: 100px;
+        border: 1px solid #000;
+        margin: 10px 0;
+        object-fit: fill;
+      }
+
+      .narrow {
+        width: 100px;
+        height: 150px;
+      }
+
+      .object-position-container {
+        height: 300px;
+        padding: 20px;
+        background-color: #ffffff;
+      }
+
+      .object-position-container img {
+        width: 100px;
+        height: 200px;
+        object-fit: none;
+        object-position: 60% 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container example-page">
+      <h1 class="heading-primary">Object-fit si object-position</h1>
+      <section>
+        <article>
+          <h2>Object fit</h2>
+          <div class="examples-section">
+            <img class="my-image" src="./goit.png" alt="MDN Logo" />
+            <img class="my-image narrow" src="./goit.png" alt="MDN Logo" />
+          </div>
+        </article>
+        <article>
+          <h2>Object position</h2>
+          <p>
+            Proprietatea object-position este utilizată împreună cu object-fit
+            pentru a specifica modul în care un &lt;img&gt; sau un &lt;video&gt;
+            ar trebui să fie poziționat cu coordonatele x / y în interiorul
+            „propriei casete de conținut”.
+          </p>
+          <div class="examples-section">
+            <div class="object-position-container">
+              <img src="./pineapple.jpg" alt="Pineapple" />
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

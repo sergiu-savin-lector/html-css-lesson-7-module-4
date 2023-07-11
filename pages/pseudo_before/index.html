@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/fonts.css" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+
+    <title>HTML/CSS Modulul 4 - Lectia 7</title>
+    <style>
+      a {
+        color: #0000ff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      a::before {
+        content: "🔗";
+      }
+
+      .mozilla-link::before {
+        content: "";
+        background: url("./mozilla.png") no-repeat;
+        background-size: 16px 16px;
+        border-bottom: 2px solid transparent;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-right: 5px;
+        /* vertical-align: middle; */
+      }
+
+      .mozilla-link:hover::before {
+        border-bottom: 3px solid #0000ff;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container example-page">
+      <h1 class="heading-primary">Pseudo-elemente before si after</h1>
+      <section>
+        <p>
+          Dacă vrei să înveți cum să devii fullstack developer, poti găsi
+          materiale la o simplă căutare pe google. Recomand să încerci
+          <a href="https://web.dev/">web.dev</a>,
+          <a href="https://www.w3schools.com/">w3schools.com</a> sau
+          <span class="center-content">
+            <a href="https://developer.mozilla.org/" class="mozilla-link"
+              >MDN web docs</a
+            ></span
+          >.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
